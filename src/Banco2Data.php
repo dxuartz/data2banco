@@ -27,4 +27,20 @@ class Banco2Data
 			return ( implode( '/', array_reverse( explode( '-', $date ) ) ) ) . $hour;
 		}
 	}
+	
+	# ------------------------------------------ ------------------------------------------ #
+	public final function revert( $show_time = false )
+	{
+		$hour = $show_time ? substr( $this->date, 10, 9 ) : '';
+		$date = substr( $this->date, 0, 10 );
+		
+		if ( substr( $date, 4, 1 ) == '-' )
+		{
+			return $date . $hour;
+		}
+		else
+		{
+			return ( implode( '-', array_reverse( explode( '/', $date ) ) ) ) . $hour;
+		}
+	}
 }
