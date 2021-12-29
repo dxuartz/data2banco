@@ -1,0 +1,24 @@
+{
+	"name": "dxuartz/data2banco",
+	"description": "Simples conversor de datas entre os formatos dd/mm/yyyy e yyyy-mm-dd",
+	"type": "library",
+	"license": "GPL-3.0-or-later",
+	"authors": 
+	[
+		{
+			"name": "Dennis Schwartz",
+			"email": "denniscs@gmail.com"
+		}
+	],
+	"autoload": 
+	{
+		"psr-4": 
+		{
+			"Dxuartz\\": "src/"
+		}
+	},
+	"require": 
+	{
+		"php": ">=7.4"
+	}
+}
