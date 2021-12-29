@@ -2,6 +2,13 @@
 
 Simples conversor de datas entre os formatos dd/mm/yyyy e yyyy-mm-dd
 
+## Instalação
+
+Para instalar:
+```shell
+composer require dxuartz/data2banco
+```
+
 ## Utilização
 
 Para usar esta classe basta seguir o exemplo abaixo:
