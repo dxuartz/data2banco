@@ -13,7 +13,7 @@ class Banco2Data
 	}
 	
 	# ------------------------------------------ ------------------------------------------ #
-	public final function convert( $show_time = false )
+	public final function toData( $show_time = false )
 	{
 		$hour = $show_time ? substr( $this->date, 10, 9 ) : '';
 		$date = substr( $this->date, 0, 10 );
@@ -29,7 +29,7 @@ class Banco2Data
 	}
 	
 	# ------------------------------------------ ------------------------------------------ #
-	public final function revert( $show_time = false )
+	public final function toBanco( $show_time = false )
 	{
 		$hour = $show_time ? substr( $this->date, 10, 9 ) : '';
 		$date = substr( $this->date, 0, 10 );
